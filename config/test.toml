@@ -1,0 +1,40 @@
+[db]
+addr = "127.0.0.1:3306"
+dbName = "test"
+user = "root"
+pass = "1234"
+charset = "utf8mb4"
+maxIdleConn = 20
+maxOpenConn = 20
+connMaxLifeTime = 30
+[http]
+host = "127.0.0.1"
+port = 80
+accessLogFile = "log/http.access.log"
+corsEnable = true
+corsAllowCredentials = true
+corsAllowAllOrigins = false
+corsAllowOrigins = [
+    "*"
+]
+corsAllowMethods = [
+    "GET",
+    "POST",
+    "OPTION",
+]
+corsAllowHeaders = [
+    "Origin"
+]
+corsExposeHeaders = [
+    "Content-Length"
+]
+corsMaxAge = 3600
+[log.console]
+enable = false
+level = "info"
+format = "%{color:bold}[%{time:2006/01/02 15:04:05.000}] %{pid} %{level:.5s} %{color:reset} %{message}"
+[log.file]
+enable = true
+path = "log/error.log"
+level = "info"
+format = "%{time:2006/01/02 15:04:05.000} %{pid} %{longfile} %{longfunc} %{callpath} %{level:.4s} %{message}"
