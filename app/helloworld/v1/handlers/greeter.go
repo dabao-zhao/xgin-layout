@@ -1,10 +1,11 @@
 package handlers
 
 import (
-	"github.com/dabao-zhao/xgin-layout/app/helloworld/v1/services"
-	"github.com/dabao-zhao/xgin-layout/app/helloworld/v1/types"
 	"github.com/gin-gonic/gin"
 	"github.com/op/go-logging"
+
+	"github.com/dabao-zhao/xgin-layout/app/helloworld/v1/services"
+	"github.com/dabao-zhao/xgin-layout/app/helloworld/v1/types"
 )
 
 type GreeterHandler struct {

@@ -1,9 +1,10 @@
 package data
 
 import (
-	"github.com/dabao-zhao/xgin-layout/config"
 	"github.com/google/wire"
 	"gorm.io/gorm"
+
+	"github.com/dabao-zhao/xgin-layout/config"
 )
 
 // ProviderSet is data providers.

@@ -1,10 +1,11 @@
 package server
 
 import (
-	"github.com/dabao-zhao/xgin-layout/app/helloworld/v1"
-	"github.com/dabao-zhao/xgin-layout/config"
 	"github.com/gin-gonic/gin"
 	"github.com/op/go-logging"
+	
+	"github.com/dabao-zhao/xgin-layout/app/helloworld/v1"
+	"github.com/dabao-zhao/xgin-layout/config"
 )
 
 func Register(r *gin.Engine, conf *config.Config, logger *logging.Logger) {
